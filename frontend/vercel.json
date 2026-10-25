@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://fullstack-hakathon-project-bf239.containers.snapdeploy.app/api/:path*"
+    }
+  ]
+}

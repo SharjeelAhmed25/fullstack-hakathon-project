@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import './App.css'
 
-const API = import.meta.env.VITE_API_URL || ''
+const API = import.meta.env.VITE_API_URL || 'https://fullstack-hakathon-project-bf239.containers.snapdeploy.app'
 const money = (amount) => new Intl.NumberFormat('en-PK', { style: 'currency', currency: 'PKR', maximumFractionDigits: 0 }).format(amount || 0)
 const shortDate = (date) => date ? new Date(`${date.slice(0, 10)}T12:00:00`).toLocaleDateString('en-PK', { day: 'numeric', month: 'short', year: 'numeric' }) : '—'
 const roles = { ADMIN: 'Admin', HR: 'Human resources', EMPLOYEE: 'Employee' }
